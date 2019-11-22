@@ -13,8 +13,8 @@
 		"coverView": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.9.3",
-	"appid": "wx91d3665da7bbd734",
+	"libVersion": "2.0.4",
+	"appid": "wxe60eb96895332246",
 	"projectname": "lit",
 	"debugOptions": {
 		"hidedInDevtools": []
