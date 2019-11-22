@@ -1,3 +1,5 @@
 <!--pages/home/home.wxml-->
 <text class="red">Hello World</text>
 <button size="mini">按钮</button>
+
+<view>Point 2</view>
