@@ -1,3 +1,11 @@
 <!--pages/home/home.wxml-->
-<text class="red">Hello World</text>
-<button size="mini">按钮</button>
+<!-- 小程序数据绑定：{{}} -> Mustache-->
+<view>Hello {{name}}</view>
+<view>My age {{age+50}}</view>
+<!-- 列表展示 wx:for -->
+<view wx:for="{{students}}">{{item.name}}</view>
+<!-- 事件监听改变data -->
+<view>{{counter}}</view>
+<button size="mini" bindtap="addClick">+</button>
+<button size="mini" open-type="getUserInfo" bindgetuserinfo="getUser">获取授权</button>
+<open-data type="userNickName"></open-data>
