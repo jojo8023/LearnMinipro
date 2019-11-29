@@ -5,62 +5,29 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    isLoading: false,
+    imagePath: ""
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  closeAlbum() {
+    wx.chooseImage({
+      success: (res) => {
+        const path = res.tempFilePaths[0]
+        console.log(res)
+        this.setData({
+          imagePath:path
+        })
+      },
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  handleImg(){
+    console.log(333)
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
+  inputBind(event){
+    console.log(event)
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  //监听滚动
+  scrollIt(event){
+    console.log(event)
   }
 })

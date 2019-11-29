@@ -1,3 +1,18 @@
 <!--pages/home/home.wxml-->
-<text class="red">Hello World</text>
-<button size="mini">按钮</button>
+<text class="red" decode selectable='{{true}}'>Hello World\n</text>
+<!-- nbsp：默认；ensp：半个中文大小；emsp：一个中文大小 -->
+<text space="ensp" decode>你 好</text>
+<button size="mini" type="warn" loading="{{isLoading}}">按钮</button>
+<button hover-class="pressed" bindtap="closeAlbum">按钮按钮按钮</button>
+<!-- view -->
+<view hidden hover-class="pressed" hover-stay-time="0">大朋友</view>
+<!-- img -->
+<image show-menu-by-longpress src="../../assets/pics/ij.jpg" />
+<image src="/assets/pics/timg.jpg" bindload="handleImg" />
+<!-- <image src="{{imagePath}}" /> -->
+<!-- input -->
+<input bindinput="inputBind"></input>
+
+<scroll-view bindscroll="scrollIt" scroll-y class="container">
+  <view wx:for="{{10}}" class="container1">{{item}}</view>
+</scroll-view>

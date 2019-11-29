@@ -1,5 +1,27 @@
 /* pages/home/home.wxss */
-.red{
+
+.red {
   color: red;
   font-size: 30px;
+}
+
+.pressed {
+  color: #fff;
+  background: pink;
+}
+
+input {
+  border: 1px solid red;
+}
+
+.container {
+  height: 200px;
+  background: purple;
+  white-space: nowrap;
+}
+
+.container1 {
+  height: 100px;
+  margin: 10px;
+  background: red;
 }
