@@ -1,19 +1,13 @@
-// pages/home/home.js
+// pages/wxs/wxs.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    num: 50,
-    movies:[['222','333'],['444','555']],
-    letters:['a','b','c']
+    time:1560598160
   },
-  addSix() {
-    this.setData({
-      num: this.data.num + 6
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

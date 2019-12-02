@@ -1,0 +1,5 @@
+<template name="tem-container">
+  <view>{{vText}}</view>
+  <button>{{bText}}</button>
+</template>
+

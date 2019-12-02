@@ -1,3 +1,26 @@
 <!--pages/home/home.wxml-->
 <text class="red">Hello World</text>
-<button size="mini">按钮</button>
+<button size="mini" bindtap="addSix">按钮</button>
+<!-- hidden用css去隐藏 if是创建 -->
+<view wx:if="{{num>=90}}">优秀</view>
+<view wx:elif="{{num>=60}}">秀</view>
+<view wx:else>垃圾</view>
+
+<block wx:for="{{movies}}">
+  <block wx:for="{{item}}" wx:for="{{item}}">
+    <view>{{item}}</view>
+  </block>
+</block>
+<!-- <view wx:for="{{movies}}" wx:for-item="movie">{{movie}}</view> -->
+<view class="container">
+  <view wx:for="{{letters}}" wx:key="{{item}}">{{item}}</view>
+</view>
+
+<!-- <template name="tem-container">
+  <view>{{vText}}</view>
+  <button>{{bText}}</button>
+</template> -->
+<include src="/wxml/template.wxml" />
+<template is="tem-container" data="{{vText:'我我的我挖宝的',bText:'点击'}}" />
+<!-- import不可以循环引入 include可以 -->
+<include src='/wxml/footer.wxml' />

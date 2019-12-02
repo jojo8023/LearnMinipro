@@ -1,0 +1,15 @@
+// 价格转化
+function priceF(price, num) {
+  var num = num || 2
+  var f_price = parseFloat(price)
+  return price.toFixed(num)
+
+}
+// 时间转化
+function dataF(tims,tformat){
+  return '2019-10-10'
+}
+module.exports = {
+  priceF: priceF,
+  dataF: dataF
+}

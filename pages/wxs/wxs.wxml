@@ -1,0 +1,5 @@
+<!--pages/wxs/wxs.wxml-->
+<text>pages/wxs/wxs.wxml</text>
+<wxs src='../../wxs/format.wxs' module='format' />
+<view>{{format.priceF(26.55555,3)}}</view>
+<view>{{format.dataF(time,'yy')}}</view>
